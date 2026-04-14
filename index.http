@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hồ sơ dự thi</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 30px;
+  background: #020617;
+  font-size: 24px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: inherit;
+  line-height: 1.6;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+🤖 HỒ SƠ XE QUÉT RÁC
+</div>
+
+<div class="container">
+
+<div class="card">
+<pre>
+
+CUỘC THI SÁNG TẠO DÀNH CHO THANH NIÊN, THIẾU NIÊN VÀ NHI ĐỒNG
+TỈNH ĐỒNG THÁP LẦN THỨ 19 NĂM 2025 – 2026
+
+BẢN THUYẾT MINH MÔ HÌNH, SẢN PHẨM DỰ THI
+      Họ tên người dự thi: Lê Tôn Minh Thuận Năm sinh: 2012 Học sinh lớp 81 Trường THCS Hưng Thạnh
+     Địa chỉ người dự thi: ấp Hưng Điền, xã Hưng Thạnh, tỉnh Đồng Tháp. Điện thoại: 0946959547
+1   Tên mô hình, sản phẩm: 
+  Xe quét rác. 
+2  Mục đích của mô hình, sản phẩm dự thi:
+     Giúp việc tự quét rác trên sân nhà, sân trường được thuận tiện tiết kiệm công sức và thời gian của con người. 
+3 . Giới thiệu mô hình, sản phẩm dự thi:
+a. Ý tưởng mô hình, sản phẩm: Ý tưởng mô hình xuất phát từ việc xả rác của học sinh trong trường và xe quét rác sân trường sẽ quét dọn rác giúp cho cở sở dạy học luôn sạch sẽ.
+b. Nguyên vật liệu làm ra mô hình, sản phẩm: 
+Mô hình bao gồm: 
+- Linh kiện điện tử: 2 động cơ làm chậm, 1 động cơ servo, mạch esp32( dùng để điều khiển xe), 2 mạch L298N (dùng để nhập tín hiệu và chạy động cơ), 1 pin 12v, 1 mạch giảm áp(dùng để hạ áp 12v xuống còn 5v để cấp nguồn cho esp32), 1 cảm biến siêu âm, 1 động cơ quét rác, 2 quạt tản nhiệt và dây điện, công tắc.
+- Vật liệu cứng: nhựa cứng (dùng để làm khung xe) nhựa mềm (dùng để làm vỏ xe), bánh xe, ống nước làm ống nối bánh xe, nhựa sợi làm chổi quét keo dán sắt và các vật dụng hỗ trợ cưa cắt nhựa. 
+c. Nguyên tắc vận hành, hoạt động của mô hình, sản phẩm:
+Khi khởi động xe esp32 sẽ phát tín hiệu cho tất cả động cơ hoạt động, 2 động cơ chạy xe sẽ chạy tới, khi gặp tường, gốc cây cảm biến sẽ báo tín hiệu về esp32 và sẽ cho động cơ chạy lùi và servo sẽ quay sang trái nếu sang trái không được sẽ quay sang phải và lùi xa hơn cho đến khi nào không còn gặp tường, gốc cây động cơ quét rác sẽ chạy tiếp. Xe chạy 3 phút nghỉ 30 giây, xe chạy khoảng 1 giờ sẽ quay về vị trí xuất phát và nghỉ 30 phút.
+d. Cách lắp ráp, lắp đặt mô hình, sản phẩm (tác giả mất bao lâu làm ra sản phẩm)
+- Bước 1:
+  + Phải thiết kế bản vẽ kĩ thuật hình dáng xe (thừng xe cao 20 cm , 
+độ cao xe khi ráp bánh vào sau 29 cm trước 25 cm,  rộng 35 cm, dài thừng xe 50cm, độ dài toàn xe luôn càng quét là 70cm ) (1 tuần)
++Cắt nhựa cứng dày làm sàn và khung xe, càng xe, nhựa cứng mỏng làm bao thùng xe, ống nước khoan lổ gắn nhựa sợi làm chổi quét. ( 2 ngày )
+-	Bước hai: xây dựng ý tưởng lập trình (chỉnh sửa) ( 2 tuần )
+-	Bước ba: Lập trình chỉnh sửa hệ thống code cho esp32 để điều khiển các động cơ cảm biến hoạt động ổn định khi cấp nguồn ( 3 tuần ) 
+-	Bước bốn: Lắp đặt mạch điện, cảm biến, motor vào xe và kết nối các motor và mạch điện với nhau bằng dây điện. ( 1 tuần)
+- Bước năm: kiểm tra và sửa lỗi của xe quét rác. ( 1 ngày ) 
+4. Đánh giá mô hình, sản phẩm:
+a. Tính mới và tính sáng tạo: 
+- Điểm mới của mô hình, sản phẩm: Để bảo vệ môi trường tạo không gian sạch đẹp mỗi ngày thiết bị em có điểm mới:
++ Mô hình nhỏ gọn không chiếm diện tích, có thể dùng quét rác sân trường, sân nhà. 
++ Mô hình sử dụng pin sạc không dây nên thuận tiện sự dụng không bị vướn dây khi hoạt động.
+ + Giá thành ổn định và phải chăng nhất so với các thiết bị điện tử. Giá trị mô hình này tính theo (VNĐ) khoảng hơn 1 triệu đồng
+- Điểm sáng tạo
++ Mô hình sản phẩm nhỏ gọn, hệ thống vận hành có sử dụng  code từ công nghệ AI.
++ Mô hình sử dụng pin sạc không dây nên thuận tiện sự dụng không bị vướn dây khi hoạt động.
+b. Khả năng áp dụng: Trình bày về khả năng áp dụng vào thực tiễn của sản phẩm: 
+     Giúp việc tự quét rác trên sân nhà, sân trường hàng ngày được thuận tiện tiết kiệm công sức và thời gian của con người. 
+c. Hiệu quả đạt được:
+- Mô hình, sản phẩm đã được ứng dụng vào thực tế: mô hình đã thực hiện quét lá cây tại sân nhà khi lắp ráp xong.
+- Mô hình, sản phẩm đã giúp tác giả người dân giải quyết những vấn đề tự quét rác khu vực sân nhà và sân trường.
+
+
+</pre>
+</div>
+
+<div class="card">
+<h2>📸 Phụ lục</h2>
+
+<img src="https://via.placeholder.com/300">
+<img src="https://via.placeholder.com/300">
+<img src="https://via.placeholder.com/300">
+
+</div>
+
+</div>
+
+</body>
+</html>
